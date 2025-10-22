@@ -53,24 +53,31 @@ header {
 	}
 }
 
-/* the styles for the main element */
-main {
-	clear: left;
-}
-
 /* the styles for the section */
 section {
 	& h1 {
 		color: var(--primary-color);
 	}
+
+	& img {
+		float: left;
+		margin: .7em;
+	}
+
+	float: right;
+	width:80%;
 }
 
 /* the styles for the article */
 article {
 	& img {
 		border: 1px solid var(--dark);
+		width: calc(0% + 30%);
+        height: calc(0% + 30%);
 	}
 }
+
+
 
 /* the styles for the aside */
 aside {
@@ -80,6 +87,9 @@ aside {
 	& img {
 		margin-bottom: .9em;
 	}
+	float: left;
+	width: 20%;
+
 }
 
 /* the styles for the footer */
@@ -90,4 +100,5 @@ footer {
 		color: white;
 		padding-bottom: 0; 
 	}
+	clear: both;
 }
