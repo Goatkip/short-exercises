@@ -79,6 +79,8 @@ section {
 		font-style: italic;
 		margin-left: 2em;
 	}
+	float: left;
+	width: 60%;
 }
 
 /* the styles for the article */
@@ -102,6 +104,8 @@ aside {
 	& img {
 		margin-bottom: .9em;
 	}
+	float: left;
+	width: 20%;
 }
 
 /* the styles for the footer */
@@ -112,4 +116,5 @@ footer {
 		color: white;
 		padding-bottom: 0; 
 	}
+	clear: both;
 }
