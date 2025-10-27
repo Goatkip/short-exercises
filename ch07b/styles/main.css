@@ -28,7 +28,11 @@ ul { margin-left: 1em; }
 h1 { font-size: 150%; }
 h2 { font-size: 120%; }
 h3 { font-size: 110%; }
+
+.current:focus, .current:hover{font-style: normal;}
 a:focus, a:hover { font-style: italic; }
+
+
 
 /* the styles for the header */
 header {
@@ -54,6 +58,50 @@ header {
 		width: clamp(40px, 15%, 66px);
 	}
 }
+
+.navbar{
+	background-color: var(--primary-color);
+}
+
+.menu{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.menu li:has(.submenu){
+	position: relative;
+}
+
+.menu li:has(.submenu):hover >.submenu{
+	display: block;
+}
+.submenu{
+	position: absolute;
+	left: 0;
+	display: none;
+	background-color: var(--primary-color);
+	width: 10em;
+}
+
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: 1em;
+
+}
+
+.current{
+	font-weight: bold;
+	color: var(--accent-color);
+}
+
 
 /* the styles for the main element */
 main {
