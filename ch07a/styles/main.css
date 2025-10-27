@@ -27,7 +27,17 @@ h1, h2, h3, p, article { padding-bottom: .5em; }
 h1 { font-size: 150%; }
 h2 { font-size: 120%; }
 h3 { font-size: 110%; }
-a:focus, a:hover { font-style: italic; }
+
+.current:hover, .current:focus{
+	color: black;
+	font-style: normal;
+}
+a:focus, a:hover { 
+	font-style: italic;
+	color: var(--accent-color);
+}
+
+
 
 /* the styles for the header */
 header {
@@ -91,6 +101,36 @@ aside {
 		margin-bottom: .9em;
 	}
 }
+
+nav{
+	background-color: var(--primary-color);
+	color: white;
+}
+
+ul{
+	display: flex;
+	flex-direction: column;
+}
+
+
+li{
+	list-style: none;
+}
+
+
+a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: .6em 1em;
+	font-weight: bold;
+}
+
+.current{
+	color: black;
+	background-color: var(--accent-color);
+}
+
 
 /* the styles for the footer */
 footer {
